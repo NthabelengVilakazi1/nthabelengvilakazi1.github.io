@@ -235,5 +235,20 @@ footer {
   font-size: 0.95rem;
 }
 
+.about-container {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  flex-wrap: wrap; /* responsive */
+}
+
+.about-pic {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%; /* circle */
+  object-fit: cover;
+  border: 4px solid #ef5ea2; /* optional branding accent */
+}
+
 
 
