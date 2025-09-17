@@ -238,16 +238,45 @@ footer {
 .about-container {
   display: flex;
   align-items: center;
-  gap: 2rem;
-  flex-wrap: wrap; /* responsive */
+  gap: 2rem;              /* spacing between image and text */
+  max-width: 1000px;
+  margin: 0 auto;          /* center container */
+  padding: 4rem 2rem;
+  flex-wrap: wrap;         /* allows responsive stacking on small screens */
 }
 
 .about-pic {
-  width: 200px;
-  height: 200px;
-  border-radius: 50%; /* circle */
+  width: 250px;            /* image width */
+  height: 250px;           /* image height */
+  border-radius: 20px;     /* smooth corners */
   object-fit: cover;
-  border: 4px solid #ef5ea2; /* optional branding accent */
+  border: 4px solid #ef5ea2; /* pink accent */
+}
+
+.about-text {
+  flex: 1;                 /* text takes remaining space */
+  color: #fff;             /* text color on dark background */
+}
+
+.about-text h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.about-text p {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+  .about-container {
+    flex-direction: column;   /* stack image above text on small screens */
+    text-align: center;
+  }
+
+  .about-pic {
+    margin-bottom: 1.5rem;
+  }
 }
 
 
