@@ -128,7 +128,7 @@ footer {
 }
 
 .project-name:hover {
-  color: #08D9D6; /* Aqua hover */
+  color: #451b2f; /* Aqua hover */
 }
 
 /* Flip Card */
@@ -171,7 +171,7 @@ footer {
 
 /* Back (description) */
 .card-back {
-  background: #1C1C1E; /* Dark background */
+  background: #333; /* Dark background */
   color: #EAEAEA;
   display: flex;
   justify-content: center;
