@@ -354,31 +354,3 @@ footer {
   text-align: center;
   font-size: 0.95rem;
 }
-
-/* Position title on image */
-.blog-front {
-  position: relative;
-}
-
-.blog-title {
-  position: absolute;
-  bottom: 10px;            /* distance from bottom */
-  left: 50%;
-  transform: translateX(-50%);
-  background: rgba(239, 94, 162, 0.8); /* semi-transparent pink overlay */
-  color: #fff;
-  padding: 6px 12px;
-  border-radius: 8px;
-  font-weight: 600;
-  font-size: 1rem;
-  transition: background 0.3s, color 0.3s;
-  text-align: center;
-}
-
-/* Hover effect on title */
-.blog-card:hover .blog-title {
-  background: #08D9D6;   /* aqua overlay on hover */
-  color: #fff;
-}
-
-
