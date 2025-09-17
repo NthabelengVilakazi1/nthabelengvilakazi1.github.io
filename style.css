@@ -212,3 +212,20 @@ footer {
   text-align: center;
   font-size: 0.95rem;
 }
+
+.resume-btn {
+  display: inline-block;
+  padding: 8px 20px;
+  border: 2px solid #ef5ea2;  /* pink border */
+  border-radius: 12px;         /* smooth corners */
+  color: #ef5ea2;              /* text color matches border */
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;   /* smooth hover */
+}
+
+.resume-btn:hover {
+  background-color: #ef5ea2;   /* box fills with pink */
+  color: #fff;                 /* text turns white */
+}
+
