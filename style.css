@@ -13,12 +13,31 @@ body {
 }
 
 header {
-  background: #333;
-  padding: 1rem 2rem;
   position: fixed;
   top: 0;
   width: 100%;
+  padding: 15px 30px;
+  background-color: #333; /* initial dark background */
+  color: #fff;            /* initial text color */
+  transition: background-color 0.3s, color 0.3s;
   z-index: 1000;
+}
+
+header a {
+  color: inherit;
+  text-decoration: none;
+  margin: 0 15px;
+  transition: color 0.3s;
+}
+
+/* Active (scrolled) state */
+header.scrolled {
+  background-color: #fff; /* changes to white on scroll */
+  color: #451b2f;         /* text changes to brand color */
+}
+
+header.scrolled a {
+  color: #451b2f;
 }
 
 nav {
