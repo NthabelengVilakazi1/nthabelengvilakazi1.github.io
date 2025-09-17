@@ -62,13 +62,25 @@ nav ul li a {
 }
 
 .logo {
-  color: #fff;
+  color: #fff;          /* initial color */
   font-weight: 600;
+  transition: color 0.3s; /* smooth transition */
 }
 
 .logo span { 
-  color: #ef5ea2;
+  color: #ef5ea2;       /* initial pink accent */
+  transition: color 0.3s;
 }
+
+/* When header is scrolled */
+header.scrolled .logo {
+  color: #ef5ea2;       /* main text color on scroll */
+}
+
+header.scrolled .logo span {
+  color: #ef5ea2;       /* keep your pink accent (or change if desired) */
+}
+
 
 .hero {
   height: 100vh;
