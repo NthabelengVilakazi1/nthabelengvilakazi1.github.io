@@ -46,20 +46,42 @@ nav {
   align-items: center;
 }
 
+/* Make all nav links align properly */
 nav ul {
   display: flex;
+  align-items: center;   /* vertically centers items */
   list-style: none;
-}
-
-nav ul li {
-  margin-left: 20px;
+  margin: 0;
+  padding: 0;
+  gap: 20px;             /* spacing between items */
 }
 
 nav ul li a {
-  color: #fff;
+  display: inline-block;
   text-decoration: none;
+  color: #fff;
+  padding: 8px 12px;
   font-weight: 500;
+  transition: color 0.3s;
+  line-height: 1;        /* ensures links are vertically centered */
+  vertical-align: middle;
 }
+
+/* Resume button overrides */
+.resume-btn {
+  border: 2px solid #ef5ea2;
+  border-radius: 12px;
+  color: #ef5ea2;
+  padding: 8px 16px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.resume-btn:hover {
+  background-color: #ef5ea2;
+  color: #fff;
+}
+
 
 .logo {
   color: #fff;          /* initial color */
@@ -213,19 +235,5 @@ footer {
   font-size: 0.95rem;
 }
 
-.resume-btn {
-  display: inline-block;
-  padding: 8px 20px;
-  border: 2px solid #ef5ea2;  /* pink border */
-  border-radius: 12px;         /* smooth corners */
-  color: #ef5ea2;              /* text color matches border */
-  font-weight: 600;
-  text-decoration: none;
-  transition: all 0.3s ease;   /* smooth hover */
-}
 
-.resume-btn:hover {
-  background-color: #ef5ea2;   /* box fills with pink */
-  color: #fff;                 /* text turns white */
-}
 
