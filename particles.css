@@ -8,7 +8,7 @@
   text-align: center;
   padding: 0 20px;
   color: #fff;
-  background: linear-gradient(135deg, #EF5EA2, #451b2f, #9a3d68);
+  background: linear-gradient(135deg, #333, #451b2f, #9a3d68);
   background-size: 600% 600%;
   animation: gradientShift 15s ease infinite;
   overflow: hidden;
