@@ -74,7 +74,7 @@ nav ul li a {
 
 /* When header is scrolled */
 header.scrolled .logo {
-  color: #ef5ea2;       /* main text color on scroll */
+  color: #451b2f;       /* main text color on scroll */
 }
 
 header.scrolled .logo span {
