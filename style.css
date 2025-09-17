@@ -354,3 +354,26 @@ footer {
   text-align: center;
   font-size: 0.95rem;
 }
+
+#contact {
+  text-align: center;
+  padding: 3rem 1rem;
+}
+
+.contact-icons {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 1.5rem;
+}
+
+.contact-icon {
+  font-size: 2.5rem;
+  color: #ef5ea2; /* Pink by default */
+  transition: color 0.3s, transform 0.3s;
+}
+
+.contact-icon:hover {
+  color: #08D9D6; /* Aqua hover */
+  transform: scale(1.2);
+}
