@@ -1,86 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Portfolio | Your Name</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      line-height: 1.6;
-      background: #f4f4f9;
-      color: #333;
-    }
-    header {
-      background: #222;
-      color: #fff;
-      padding: 20px 10px;
-      text-align: center;
-    }
-    nav a {
-      color: #fff;
-      margin: 0 10px;
-      text-decoration: none;
-      font-weight: bold;
-    }
-    section {
-      max-width: 900px;
-      margin: 20px auto;
-      padding: 20px;
-      background: #fff;
-      border-radius: 8px;
-    }
-    h1, h2 {
-      color: #222;
-    }
-    .project {
-      margin-bottom: 20px;
-      padding-bottom: 15px;
-      border-bottom: 1px solid #ddd;
-    }
-  </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pauly's Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <!-- AOS Animations -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
+  <!-- Navbar -->
   <header>
-    <h1>Your Name</h1>
-    <p>Data Analyst → BI Developer | Power BI • SQL • Python • Cloud</p>
     <nav>
-      <a href="#projects">Projects</a>
-      <a href="#about">About</a>
-      <a href="#contact">Contact</a>
+      <h1 class="logo">Pauly<span>.</span></h1>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#blog">Blog</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
     </nav>
   </header>
 
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <h2>Hello, I'm <span class="highlight">Pauly</span></h2>
+    <h3 class="typing"></h3>
+    <p>Turning data into stories and dashboards into decisions.</p>
+    <a href="#projects" class="btn">See My Work</a>
+  </section>
+
+  <!-- Projects Section -->
   <section id="projects">
-    <h2>Projects</h2>
-
-    <div class="project">
-      <h3>📊 Sales Dashboard (Power BI)</h3>
-      <p>Interactive dashboard showing sales trends, regional performance, and product insights.</p>
-      <a href="https://github.com/yourusername/sales-dashboard" target="_blank">View Code</a> | 
-      <a href="https://app.powerbi.com/view?r=example" target="_blank">Live Dashboard</a>
+    <h2 data-aos="fade-up">Projects</h2>
+    <div class="grid">
+      <div class="card" data-aos="zoom-in">
+        <h3>Power BI Dashboard</h3>
+        <p>Business performance dashboard with interactive KPIs.</p>
+        <a href="#">View Project</a>
+      </div>
+      <div class="card" data-aos="zoom-in">
+        <h3>SQL Optimization</h3>
+        <p>Complex queries & performance tuning for retail data.</p>
+        <a href="#">View Project</a>
+      </div>
+      <div class="card" data-aos="zoom-in">
+        <h3>Python Automation</h3>
+        <p>Automated ETL pipeline for reporting workflows.</p>
+        <a href="#">View Project</a>
+      </div>
     </div>
-
-    <div class="project">
-      <h3>🤖 Predictive Analytics with Python</h3>
-      <p>Built a churn prediction model using Python, pandas, and scikit-learn.</p>
-      <a href="https://github.com/yourusername/churn-model" target="_blank">View Code</a>
-    </div>
-
   </section>
 
+  <!-- Blog Section -->
+  <section id="blog">
+    <h2 data-aos="fade-up">Blog</h2>
+    <p>Read my articles on <a href="https://medium.com" target="_blank">Medium</a>.</p>
+  </section>
+
+  <!-- About Section -->
   <section id="about">
-    <h2>About Me</h2>
-    <p>
-      Hi, I'm Your Name 👋. I have 4 years of experience as a Data Analyst specializing in Excel and Power BI.
-      I'm currently building skills in SQL, Python, cloud, and ETL to transition into a BI Developer role.
-    </p>
+    <h2 data-aos="fade-up">About Me</h2>
+    <p>I’m a data analyst & BI developer with a passion for creativity, strategy, and storytelling through data.</p>
   </section>
 
+  <!-- Contact Section -->
   <section id="contact">
-    <h2>Contact</h2>
-    <p>
-      📧 Email: <a href="mailto:your.email@example.com">your.email@example.com</a><br>
-      💼 LinkedIn: <a href="https://linkedin.c
+    <h2 data-aos="fade-up">Get In Touch</h2>
+    <p>Let’s connect on <a href="https://linkedin.com">LinkedIn</a> or drop me an email at <a href="mailto:your@email.com">your@email.com</a>.</p>
+  </section>
+
+  <footer>
+    <p>© 2025 Pauly. Built with ❤️ + GitHub Pages.</p>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    // Typed.js for typing effect
+    var typed = new Typed('.typing', {
+      strings: ["Data Analyst", "BI Developer", "Creative Storyteller"],
+      typeSpeed: 80,
+      backSpeed: 60,
+      loop: true
+    });
+
+    // AOS animations
+    AOS.init();
+  </script>
+</body>
+</html>
