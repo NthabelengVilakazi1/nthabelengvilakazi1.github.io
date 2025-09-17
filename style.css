@@ -281,108 +281,32 @@ footer {
 
 /*BLOG*/
 /* Blog Grid */
-/* Make sure blog cards start immediately under the heading */
 .blog-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 2rem;
-  margin-top: 1rem;  /* smaller spacing to heading */
+  margin-top: 0; /* remove extra spacing */
+}
+
+/* Remove default spacing from links wrapping cards */
+.blog-card > a {
+  display: block;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
 }
 
 /* Flip Card */
 .blog-card {
   perspective: 1000px;
+  margin: 0;  /* remove any extra spacing */
 }
 
-/* Ensure .blog-inner fills the space correctly */
 .blog-inner {
   position: relative;
   width: 100%;
   padding-top: 100%; /* keeps square tiles */
   transition: transform 0.8s;
   transform-style: preserve-3d;
-  margin: 0;          /* remove any unwanted margins */
+  margin: 0;
 }
-
-.blog-card:hover .blog-inner {
-  transform: rotateY(180deg);
-}
-
-/* Front and Back Faces */
-.blog-front, .blog-back {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  border-radius: 15px;
-  overflow: hidden;
-  backface-visibility: hidden;
-  box-shadow: 0 5px 20px rgba(0,0,0,0.6);
-}
-
-/* Front (image) */
-.blog-front {
-  position: relative; /* needed for title overlay */
-}
-
-.blog-front img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
-}
-
-/* Blog Title Overlay */
-.blog-title {
-  position: absolute;
-  bottom: 10px;
-  left: 50%;
-  transform: translateX(-50%);
-  background: rgba(239, 94, 162, 0.8); /* semi-transparent pink */
-  color: #fff;
-  padding: 6px 12px;
-  border-radius: 8px;
-  font-weight: 600;
-  font-size: 1rem;
-  text-align: center;
-  z-index: 2;
-  transition: background 0.3s, color 0.3s;
-}
-
-.blog-card:hover .blog-title {
-  background: #08D9D6; /* aqua overlay on hover */
-  color: #fff;
-}
-
-/* Back (description) */
-.blog-back {
-  background: #1C1C1E; /* dark background */
-  color: #EAEAEA;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 1rem;
-  transform: rotateY(180deg);
-  text-align: center;
-  font-size: 0.95rem;
-}
-
-/* Responsive */
-@media (max-width: 768px) {
-  .blog-grid {
-    grid-template-columns: 1fr; /* stack on small screens */
-  }
-}
-
-/* Remove default margins on section headings */
-#blog h2 {
-  margin-bottom: 1rem;   /* adjust spacing below heading */
-  color: #fff;           /* optional: match your site theme */
-  text-align: center;
-}
-
-
-
-
-
