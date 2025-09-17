@@ -48,7 +48,7 @@ nav ul li a {
 }
 
 .logo span {
-  color: #ff5722;
+  color: #ef5ea2;
 }
 
 .hero {
@@ -64,12 +64,12 @@ nav ul li a {
 }
 
 .hero .highlight {
-  color: #ff5722;
+  color: #ef5ea2;
 }
 
 .hero .btn {
   margin-top: 20px;
-  background: #ff5722;
+  background: #ef5ea2;
   color: #fff;
   padding: 10px 20px;
   text-decoration: none;
