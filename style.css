@@ -13,7 +13,7 @@ body {
 }
 
 header {
-  background: #111;
+  background: #333;
   padding: 1rem 2rem;
   position: fixed;
   top: 0;
@@ -47,8 +47,7 @@ nav ul li a {
   font-weight: 600;
 }
 
-.logo span {
-  font-size: 3rem; 
+.logo span { 
   color: #ef5ea2;
 }
 
@@ -102,7 +101,7 @@ section {
 }
 
 footer {
-  background: #111;
+  background: #333;
   color: #fff;
   text-align: center;
   padding: 1rem;
