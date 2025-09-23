@@ -420,3 +420,29 @@ section.container:last-child {
   margin-bottom: 2rem;
 }
 
+/* Horizontal scroll carousel */
+.carousel-container {
+  overflow-x: auto;        /* enable horizontal scroll */
+  scroll-behavior: smooth; /* smooth scrolling */
+  -webkit-overflow-scrolling: touch;
+  padding: 1rem 0;
+}
+
+.carousel-track {
+  display: flex;
+  gap: 1.5rem;             /* spacing between images */
+}
+
+.carousel-track img {
+  flex: 0 0 auto;          /* prevent images from shrinking */
+  width: 300px;             /* fixed width for all images */
+  height: auto;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+  transition: transform 0.3s;
+}
+
+.carousel-track img:hover {
+  transform: scale(1.05);   /* subtle zoom on hover */
+}
+
