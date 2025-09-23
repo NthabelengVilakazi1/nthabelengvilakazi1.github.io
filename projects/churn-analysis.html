@@ -47,11 +47,11 @@
   <section id="approach" class="container" data-aos="fade-up">
   <h1 class="highlight">Approach</h1>
   <ol>
-    <li><strong>EDA:</strong> Understand patterns in churn, tenure, and service usage.</li>
-    <li><strong>Feature Engineering:</strong> Derived features like tenure groups, total services, and high charges flags.</li>
-    <li><strong>Modeling:</strong> Logistic Regression, Random Forest, XGBoost. Selected the best-performing model.</li>
-    <li><strong>Explainability:</strong> SHAP values to identify key churn drivers.</li>
-    <li><strong>Business Insights:</strong> Calculated expected saved revenue and suggested targeted retention strategies.</li>
+    <li><strong>EDA:</strong> Explored patterns in churn, tenure, and service usage to uncover trends and anomalies that informed the modeling process.</li>
+    <li><strong>Feature Engineering:</strong> Created derived features like tenure groups, total services per customer, and high charges flags to improve model performance.</li>
+    <li><strong>Modeling:</strong> Tested Logistic Regression, Random Forest, and XGBoost. Selected the best-performing model based on accuracy, precision, recall, and ROC-AUC.</li>
+    <li><strong>Explainability:</strong> Applied SHAP values to identify key drivers of churn for individual customers and overall trends.</li>
+    <li><strong>Business Insights:</strong> Translated model results into actionable strategies, estimating expected saved revenue and recommending targeted retention campaigns.</li>
   </ol>
 </section>
 
@@ -59,10 +59,12 @@
   <section id="data" class="container" data-aos="fade-up">
     <h1 class="highlight">Data</h1>
     <p>7,043 telecom customers with features like gender, seniority, service usage, contract type, payment method, and monthly charges.</p>
+    <p>The data set includes information about:</p>
     <ul>
-      <li><code>tenure</code>, <code>MonthlyCharges</code>, <code>TotalCharges</code></li>
-      <li>Contract & Payment Type</li>
-      <li>Service usage flags (Online Security, Streaming, Tech Support)</li>
+      <li><code>Customers who left within the last month</code>
+      <li>Services that each customer has signed up for – phone, multiple lines, internet, online security, online backup, device protection, tech support, and streaming TV and movies</li>
+      <li>Customer account information – how long they’ve been a customer, contract, payment method, paperless billing, monthly charges, and total charges</li>
+      <li>Demographic info about customers – gender, age range, and if they have partners and dependents</li>
       <li>Target variable: <code>Churn</code></li>
     </ul>
     <img src="../images/data-overview.png" alt="Dataset Snapshot" class="project-img">
