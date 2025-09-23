@@ -61,9 +61,6 @@ The dataset consists of 7,043 telecom customers with features like gender, senio
 - Power BI dashboard: Key Influencers, customer segmentation, churn probabilities  
 - SHAP feature importance visuals
 
-![Code Snippet](images/code_snippet.png)
-![Dashboard Screenshot](images/dashboard_screenshot.png)
-
 ---
 
 ## Impact / Results
@@ -84,7 +81,7 @@ The dataset consists of 7,043 telecom customers with features like gender, senio
 
 ## Links
 
-- **GitHub Repository:** [View on GitHub](https://github.com/yourusername/telco-churn)  
+- **GitHub Repository:** [View on GitHub](https://github.com/NthabelengVilakazi1/Churn_analysis)  
 - **Medium Article:** [Read on Medium](https://medium.com/@yourusername/telco-churn-analysis)  
 
 ---
