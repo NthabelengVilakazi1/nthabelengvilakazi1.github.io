@@ -97,6 +97,12 @@
   </div>
 </div>
 
+  <!-- Model -->
+  <section id="insights" class="container" data-aos="fade-up">
+    <h1 class="highlight">Model Training</h1>
+    <ul>
+      <li><strong>Models: </strong> I tested multiple models—Logistic Regression, Random Forest, XGBoost—to predict high-risk customers. After tuning and evaluating with accuracy, precision, recall, and ROC-AUC, XGBoost emerged as the winner with balanced performance. Using SHAP values, I could explain why each customer was flagged, turning predictions into actionable business insights.</li>
+    </ul>
 
 <!-- Code & Dashboard -->
 <section id="code-dashboard" class="container" data-aos="fade-up">
@@ -127,24 +133,54 @@
 </section>
 
 
-  <!-- Impact -->
-  <section id="impact" class="container" data-aos="fade-up">
-    <h2 class="highlight">Impact / Results</h2>
-    <ul>
-      <li>Accuracy: 80%</li>
-      <li>Precision: 65%</li>
-      <li>Recall: 52%</li>
-      <li>ROC-AUC: 0.84</li>
-      <li>Identified 684 high-risk customers</li>
-      <li>Expected saved revenue: R75 537</li>
-       <div class="carousel-container">
-      <div class="carousel-track">
-        <img src="../images/model-accuracy.png" alt="KPIs" class="project-img">
-        <img src="../images/customer insights.png" alt="Top 10 High-Risk Customers">
-      </div>
+<!-- Impact / Results -->
+<section id="impact" class="container" data-aos="fade-up">
+  <h2 class="highlight">Impact / Results</h2>
+
+  <div class="impact-cards grid">
+    <div class="card">
+      <h3>Model Performance</h3>
+      <ul>
+        <li><strong>Accuracy:</strong> 80%</li>
+        <li><strong>Precision:</strong> 65%</li>
+        <li><strong>Recall:</strong> 52%</li>
+        <li><strong>ROC-AUC:</strong> 0.84</li>
+         <img src="../images/model-accuracy.png" alt="KPIs & Dashboard Visuals" class="project-img">
+      </ul>
     </div>
-    </ul>
-  </section>
+
+    <div class="card">
+      <h3>Business Impact</h3>
+      <ul>
+        <li>Identified 684 high-risk customers</li>
+        <li>Expected saved revenue: R75,537</li>
+        <li>Key churn drivers: Fiber-optic internet, month-to-month contracts, electronic check payments</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h3>Operational Insights</h3>
+      <ul>
+        <li>Prioritize month-to-month contract holders for retention campaigns</li>
+        <li>Flag high monthly charge customers for proactive outreach</li>
+        <li>Enable personalized marketing campaigns via segmentation</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h3>Next Steps</h3>
+      <ul>
+        <li>Integrate churn prediction into CRM for automated alerts</li>
+        <li>Run A/B tests for retention campaigns based on risk segments</li>
+        <li>Monitor model performance monthly</li>
+      </ul>
+    </div>
+  </div>
+
+  <p>Visual highlights from the Power BI dashboard and SHAP plots provide clear, actionable insights for management.</p>
+  <img src="../images/model-accuracy.png" alt="KPIs & Dashboard Visuals" class="project-img">
+</section>
+
 
   <!-- Links -->
   <section id="links" class="container" data-aos="fade-up">
