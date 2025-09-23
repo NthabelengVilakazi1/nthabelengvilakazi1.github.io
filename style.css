@@ -377,3 +377,46 @@ footer {
   color: #08D9D6; /* Aqua hover */
   transform: scale(1.2);
 }
+
+/* --- Project Section Styling --- */
+section.container {
+  padding: 3rem 2rem;       /* tighter vertical spacing */
+  max-width: 900px;          /* optional: constrain width for better readability */
+  margin: 0 auto;            /* center sections horizontally */
+  text-align: center;        /* center general text */
+}
+
+/* Headings in project sections */
+section.container h1.highlight {
+  margin-bottom: 1.5rem;
+}
+
+/* Paragraphs */
+section.container p {
+  margin-bottom: 1rem;
+  line-height: 1.6;
+}
+
+/* Lists inside project sections */
+section.container ol,
+section.container ul {
+  text-align: left;          /* align bullets/numbers properly */
+  display: inline-block;     /* center the list block horizontally */
+  margin: 1rem auto;         /* vertical spacing + horizontal centering */
+  padding-left: 1.5rem;      /* proper indentation for bullets/numbers */
+  line-height: 1.6;
+}
+
+/* Images inside project sections */
+section.container img.project-img {
+  max-width: 80%;           /* scale images nicely */
+  height: auto;
+  margin-top: 1.5rem;
+  border-radius: 15px;
+}
+
+/* Optional: reduce spacing below last element of section */
+section.container:last-child {
+  margin-bottom: 2rem;
+}
+
