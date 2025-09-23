@@ -4,112 +4,117 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Telco Customer Churn Prediction</title>
-  <link rel="stylesheet" href="../styles.css"> <!-- your CSS file -->
-  <style>
-    body { font-family: Arial, sans-serif; line-height: 1.6; padding: 20px; max-width: 900px; margin: auto; }
-    h2, h3 { color: #2c3e50; }
-    img { max-width: 100%; margin: 10px 0; border-radius: 6px; }
-    .carousel img { display: block; margin-bottom: 10px; }
-    .project-links a { display: inline-block; margin-right: 20px; color: #2980b9; text-decoration: none; }
-    pre { background: #f4f4f4; padding: 10px; overflow-x: auto; border-radius: 6px; }
-    details summary { cursor: pointer; font-weight: bold; margin-top: 10px; }
-    hr { margin: 40px 0; border: 0; border-top: 1px solid #ccc; }
-  </style>
+  <!-- Link your brand CSS -->
+  <link rel="stylesheet" href="../styles.css">
 </head>
 <body>
 
-  <h1>Telco Customer Churn Prediction & Insights</h1>
-  <p><strong>Using Data Science & Explainable AI to Identify High-Risk Customers and Boost Retention</strong></p>
-  <img src="../images/churn-dashboard.png" alt="Hero Thumbnail">
+<header>
+  <nav>
+    <div class="logo">Pauly<span>Portfolio</span></div>
+    <ul>
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="../projects.html">Projects</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+</header>
 
-  <hr>
+<main>
+  <section class="hero">
+    <h1>Telco Customer Churn Prediction & Insights</h1>
+    <p class="highlight">Using Data Science & Explainable AI to Identify High-Risk Customers and Boost Retention</p>
+    <img src="../images/churn-dashboard.png" alt="Hero Thumbnail">
+  </section>
 
-  <h2>Concept / Problem</h2>
-  <p>Telecom companies lose millions annually due to customer churn. Predicting which customers are likely to leave helps companies proactively retain them.</p>
-  <p>In this project, I developed a predictive model to identify high-risk customers and provide actionable insights to reduce churn while protecting recurring revenue.</p>
+  <section id="concept">
+    <h2>Concept / Problem</h2>
+    <p>Telecom companies lose millions annually due to customer churn. Predicting which customers are likely to leave helps companies proactively retain them.</p>
+    <p>In this project, I developed a predictive model to identify high-risk customers and provide actionable insights to reduce churn while protecting recurring revenue.</p>
+  </section>
 
-  <hr>
+  <section id="approach">
+    <h2>Approach</h2>
+    <ol>
+      <li><strong>EDA:</strong> Understand patterns in churn, tenure, and service usage.</li>
+      <li><strong>Feature Engineering:</strong> Derived features like tenure groups, total services, and high charges flags.</li>
+      <li><strong>Modeling:</strong> Logistic Regression, Random Forest, XGBoost. Selected the best-performing model.</li>
+      <li><strong>Explainability:</strong> SHAP values to identify key churn drivers.</li>
+      <li><strong>Business Insights:</strong> Calculated expected saved revenue and suggested targeted retention strategies.</li>
+    </ol>
+    <img src="../images/workflow_diagram.png" alt="Process Flow">
+  </section>
 
-  <h2>Approach</h2>
-  <ol>
-    <li><strong>Exploratory Data Analysis (EDA):</strong> Understand patterns in churn, tenure, and service usage.</li>
-    <li><strong>Feature Engineering:</strong> Created derived features like tenure groups, total services, and high charges flags.</li>
-    <li><strong>Modeling:</strong> Tested Logistic Regression, Random Forest, and XGBoost. Selected the best-performing model based on accuracy, precision, recall, and ROC-AUC.</li>
-    <li><strong>Explainability:</strong> Used SHAP values to identify key features driving churn for each customer.</li>
-    <li><strong>Business Insights:</strong> Calculated expected saved revenue and suggested targeted retention strategies.</li>
-  </ol>
-  <img src="../images/workflow_diagram.png" alt="Process Flow">
+  <section id="data">
+    <h2>Data</h2>
+    <p>7,043 telecom customers with features like gender, seniority, service usage, contract type, payment method, and monthly charges.</p>
+    <ul>
+      <li><code>tenure</code>, <code>MonthlyCharges</code>, <code>TotalCharges</code></li>
+      <li>Contract & Payment Type</li>
+      <li>Service usage flags (Online Security, Streaming, Tech Support)</li>
+      <li>Target variable: <code>Churn</code></li>
+    </ul>
+    <img src="../images/data-overview.png" alt="Dataset Snapshot">
+  </section>
 
-  <hr>
+  <section id="insights">
+    <h2>Key Insights & Visuals</h2>
+    <ul>
+      <li><strong>Churn Drivers:</strong> Fiber-optic internet, month-to-month contracts, electronic check payments.</li>
+      <li><strong>Demographics:</strong> Senior citizens and customers without partners or dependents have higher churn rates.</li>
+      <li><strong>Revenue Opportunity:</strong> Targeting high-risk customers can save ~$145,000 annually.</li>
+    </ul>
 
-  <h2>Data</h2>
-  <p>The dataset consists of 7,043 telecom customers with features like gender, seniority, service usage, contract type, payment method, and monthly charges.</p>
-  <p><strong>Key variables:</strong></p>
-  <ul>
-    <li><code>tenure</code>, <code>MonthlyCharges</code>, <code>TotalCharges</code></li>
-    <li>Contract & Payment Type</li>
-    <li>Service usage flags (Online Security, Streaming, Tech Support)</li>
-    <li>Target variable: <code>Churn</code> (Yes/No)</li>
-  </ul>
-  <img src="../images/data-overview.png" alt="Dataset Snapshot">
+    <div class="carousel">
+      <img src="../images/key-influencers.png" alt="Key Influencers Visual">
+      <img src="../images/top10_highrisk.png" alt="Top 10 High-Risk Customers">
+      <img src="../images/pie_chart_contract.png" alt="Churn by Contract Type">
+      <img src="../images/line_chart_tenure.png" alt="Tenure vs Churn Probability">
+    </div>
+  </section>
 
-  <hr>
+  <section id="code-dashboard">
+    <h2>Code & Dashboard</h2>
+    <ul>
+      <li>Notebook snippets: EDA, Feature Engineering, Model Training</li>
+      <li>Power BI dashboard: Key Influencers, customer segmentation, churn probabilities</li>
+      <li>SHAP feature importance visuals</li>
+    </ul>
 
-  <h2>Key Insights & Visuals</h2>
-  <ul>
-    <li><strong>Churn Drivers:</strong> Customers with Fiber-optic internet, month-to-month contracts, or electronic check payments are more likely to churn.</li>
-    <li><strong>Demographics:</strong> Senior citizens and customers without partners or dependents have higher churn rates.</li>
-    <li><strong>Revenue Opportunity:</strong> Targeting high-risk customers can potentially save ~$145,000 in annual revenue.</li>
-  </ul>
+    <details>
+      <summary>View Feature Engineering Code</summary>
+      <pre><code>df['tenure_group'] = pd.cut(df['tenure'], bins=[0, 12, 24, 36, 48, 60, 72], 
+                    labels=['0-12','13-24','25-36','37-48','49-60','61+'])</code></pre>
+    </details>
+  </section>
 
-  <h3>Screenshots Carousel</h3>
-  <div class="carousel">
-    <img src="../images/key-influencers.png" alt="Key Influencers Visual">
-    <img src="../images/top10_highrisk.png" alt="Top 10 High-Risk Customers">
-    <img src="../images/pie_chart_contract.png" alt="Churn by Contract Type">
-    <img src="../images/line_chart_tenure.png" alt="Tenure vs Churn Probability">
-  </div>
+  <section id="impact">
+    <h2>Impact / Results</h2>
+    <ul>
+      <li>Accuracy: 80%</li>
+      <li>Precision: 65%</li>
+      <li>Recall: 52%</li>
+      <li>ROC-AUC: 0.84</li>
+    </ul>
+    <ul>
+      <li>Identified 684 high-risk customers</li>
+      <li>Expected saved revenue: $145,095</li>
+    </ul>
+    <img src="../images/kpi_dashboard.png" alt="KPIs">
+  </section>
 
-  <hr>
+  <section id="links">
+    <h2>Links</h2>
+    <div class="project-links">
+      <a href="https://github.com/NthabelengVilakazi1/Churn_analysis" target="_blank">GitHub Repository</a>
+      <a href="https://medium.com/@yourusername/telco-churn-analysis" target="_blank">Medium Article</a>
+    </div>
+  </section>
+</main>
 
-  <h2>Code & Dashboard</h2>
-  <ul>
-    <li>Notebook snippets: EDA, Feature Engineering, Model Training</li>
-    <li>Power BI dashboard: Key Influencers, customer segmentation, churn probabilities</li>
-    <li>SHAP feature importance visuals</li>
-  </ul>
-
-  <details>
-    <summary>View Feature Engineering Code</summary>
-    <pre><code>df['tenure_group'] = pd.cut(df['tenure'], bins=[0, 12, 24, 36, 48, 60, 72], 
-                    labels=['0-12','13-24','25-36','37-48','49-60','61+'])
-    </code></pre>
-  </details>
-
-  <hr>
-
-  <h2>Impact / Results</h2>
-  <p><strong>Model Performance:</strong></p>
-  <ul>
-    <li>Accuracy: 80%</li>
-    <li>Precision: 65%</li>
-    <li>Recall: 52%</li>
-    <li>ROC-AUC: 0.84</li>
-  </ul>
-  <p><strong>Business Impact:</strong></p>
-  <ul>
-    <li>Identified 684 high-risk customers</li>
-    <li>Expected saved revenue: $145,095 if retention campaigns are applied successfully</li>
-  </ul>
-  <img src="../images/kpi_dashboard.png" alt="KPIs">
-
-  <hr>
-
-  <h2>Links</h2>
-  <div class="project-links">
-    <a href="https://github.com/NthabelengVilakazi1/Churn_analysis" target="_blank">GitHub Repository</a>
-    <a href="https://medium.com/@yourusername/telco-churn-analysis" target="_blank">Medium Article</a>
-  </div>
+<footer>
+  <p>&copy; 2025 Pauly Portfolio</p>
+</footer>
 
 </body>
 </html>
