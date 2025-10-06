@@ -59,8 +59,6 @@
   <!-- Data -->
   <section id="data" class="container" data-aos="fade-up">
     <h1 class="highlight">What I Built</h1>
-    <p>7,043 telecom customers with features like gender, seniority, service usage, contract type, payment method, and monthly charges.</p>
-    <p>The data set includes information about:</p>
     <ul>
       <li><code>Customers who left within the last month</code>
       <li> Designed a star schema with one fact table (fact_sales) at the center and five dimension tables (dim_customer, dim_item, dim_store, dim_payment, dim_time).</li>
@@ -74,20 +72,12 @@
 
   <!-- Insights & Visuals -->
   <section id="insights" class="container" data-aos="fade-up">
-    <h1 class="highlight">Key Insights & Visuals</h1>
+    <h1 class="highlight">Key SQL Highlights</h1>
     <ul>
-      <li> Designed a star schema with one fact table (fact_sales) at the center and five dimension tables (dim_customer, dim_item, dim_store, dim_payment, dim_time).</li>
-      <img src="../images/churn-distribution.png" alt="Dataset Snapshot" class="project-img">
-      <li> Wrote SQL scripts for schema creation, indexes, materialized views, and data validation.</li>
-      <img src="../images/senior citizens.png" alt="Dataset Snapshot" class="project-img">
-      <img src="../images/dependents.png" alt="Dataset Snapshot" class="project-img">
-      <img src="../images/partners.png" alt="Dataset Snapshot" class="project-img">
-      <li> Developed analytical queries that show revenue trends, top sellers, repeat customer behavior, and store performance.</li>
-      <img src="../images/tenure.png" alt="Dataset Snapshot" class="project-img">
-      <li> Automated reports with stored procedures.</li>
-      <img src="../images/contract.png" alt="Dataset Snapshot" class="project-img">
-      <li> Documented everything in a runbook-style README and visualized the design with an ERD diagram.</li>
-      <img src="../images/payment method.png" alt="Dataset Snapshot" class="project-img">
+      <li> <strong>Window Functions:</strong> ranking top 5 products per month, running totals per customer.</li>
+      <li> <strong>CTEs:</strong> simplifying multi-step logic like repeat customer rates and cohort analysis.</li>
+      <li> <strong>Data Validation:</strong> ensuring referential integrity, checking orphaned keys, and validating calculations.</li>
+      <li> <strong>Optimization</strong> adding indexes and using materialized views for faster reporting.</li>
     </ul>
 
   <div class="carousel-container">
