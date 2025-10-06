@@ -447,13 +447,7 @@ section.container:last-child {
 }
 
 
-/* Projects section uses grid or flex */
-#projects {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 2rem;
-}
+
 
 /* Contact section should stack below */
 #contact {
